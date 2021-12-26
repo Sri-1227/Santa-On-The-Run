@@ -1,75 +1,142 @@
 body {
-  width: 100%;
-  height: fit-content;
-}
-#game {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(img/track.jpeg);
-  background-position: 50%;
-  background-repeat: repeat-x;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://image.freepik.com/free-vector/realistic-christmas-background_52683-47872.jpg);
+  background-position: center;
   background-size: cover;
+  color: white;
+  font-family: Georgia, serif;
 }
-#track {
-  background-image: url(img/hhe.gif);
+.banner {
   position: absolute;
-  width: 100%;
-  bottom: 0%;
-  height: 49px;
-}
-/* obstacle styling */
-.obstacle {
-  position: absolute;
-  width: 150px;
-  height: 155px;
-  background-image: url(img/obstacle.png);
-  bottom: 50px;
-  z-index: 1;
-  left: 1286px;
-}
-/* obstacle styling */
+  width: 807px;
+  height: 101px;
+  left: 425px;
+  top: 5px;
+  font-family: Snowburst One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 101px;
+  /* identical to box height */
 
-/* kid styling */
-.kid {
-  position: absolute;
-  width: 100px;
-  height: 147px;
-  background-image: url(img/kidsmall.png);
-  bottom: 100px;
-  z-index: 0;
-}
-/* kid styling */
-
-/* ******************************************************************* */
-/* santa static styling */
-#santa {
-  position: absolute;
-  width: 215px;
-  background-image: url(img/santa.png);
-  height: 145px;
-  /* background-size: cover; */
-  left: 80px;
-  bottom: 50px;
-}
-
-/* *************************************** */
-/* obstacle animation */
-@keyframes obstacleMove {
-  0% {
-    left: 1290px;
-  }
-  50% {
-    left: 640px;
-  }
-  100% {
-    left: -10px;
-  }
-}
-.movingtree {
-  animation: obstacleMove 1.2s infinite linear;
-}
-#alert {
+  display: flex;
+  align-items: center;
   text-align: center;
-  color: red;
+
+  color: #ffffff;
+}
+
+.login-page {
+  width: 360px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form input {
+  font-family: "roborto", sans-serif;
+  outline: 1;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 9px;
+}
+
+.font button {
+  font-family: "roboto", sans-serif;
+  text-transform: uppercase;
+  background: #fc9918;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-area {
+  float: left;
+  list-style: none;
+  margin-top: 30px;
+}
+.nav-area li {
+  display: inline-block;
+}
+.nav-area li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-family: Snowburst One;
+  font-size: 30px;
+}
+.nav-area li a:hover {
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.nav-area1 {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+.nav-area1 li {
+  display: inline-block;
+}
+.nav-area1 li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 30px;
+  font-family: Snowburst One;
+  font-size: 30px;
+}
+.nav-area1 li a:hover {
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+#signing-up {
+  text-decoration: none;
+  font-weight: bold;
+  color: #dbf1fd;
+}
+#login-btn {
+  background-color: #333;
+}
+#btn {
+  width: 160px;
+  height: 50px;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 7px;
+  color: #6e1bbb;
+}
+#btn:hover {
+  background-color: #8856b8;
+}
+#signing-up:hover {
+  /* text-decoration: double; */
+  color: #8856b8;
+  font-weight: bolder;
 }

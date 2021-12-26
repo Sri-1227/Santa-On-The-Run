@@ -1,0 +1,5 @@
+- changed login button in login.html to a link which can navigate to game afterwards
+- changed login button text to "Let's Play", coz it felt a little playful
+- I feel the hover color the buttons was not good better make a change
+- changed the Banner Text of login.html and signup.html - "Santa On Run" to navigate to homepage
+-
