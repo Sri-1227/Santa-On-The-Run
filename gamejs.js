@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         obstacle.classList.remove("obstacle");
 
-        document.getElementById("replay").innerHTML = "Restart to play again";
+        document.getElementById("replay").innerHTML = "Refresh to play again";
       }
       obstaclePosition -= 10;
       obstacle.style.left = obstaclePosition + "px";
