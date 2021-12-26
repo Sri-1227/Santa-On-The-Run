@@ -11,6 +11,31 @@ body {
   background-repeat: repeat-x;
   background-size: cover;
 }
+#home {
+  /* margin-left: 90px; */
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  /* width: 40px; */
+}
+#home a {
+  color: brown;
+  font-weight: bolder;
+  font-size: x-large;
+  text-decoration: none;
+}
+#alert {
+  text-align: center;
+}
+#replay {
+  position: absolute;
+  bottom: 400px;
+  left: 500px;
+  text-align: center;
+  font-size: xx-large;
+  color: brown;
+  font-weight: bolder;
+}
 #track {
   background-image: url(img/hhe.gif);
   position: absolute;
@@ -54,22 +79,3 @@ body {
 }
 
 /* *************************************** */
-/* obstacle animation */
-@keyframes obstacleMove {
-  0% {
-    left: 1290px;
-  }
-  50% {
-    left: 640px;
-  }
-  100% {
-    left: -10px;
-  }
-}
-.movingtree {
-  animation: obstacleMove 1.2s infinite linear;
-}
-#alert {
-  text-align: center;
-  color: red;
-}
