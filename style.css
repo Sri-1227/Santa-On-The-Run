@@ -10,7 +10,7 @@ body {
   position: absolute;
   width: 807px;
   height: 101px;
-  left: 425px;
+  left: 550px;
   top: 5px;
   font-family: Snowburst One;
   font-style: normal;
@@ -18,12 +18,14 @@ body {
   font-size: 70px;
   line-height: 101px;
   /* identical to box height */
-
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #ffffff;
+}
+#game-link {
+  color: #eaeb21;
+  text-shadow: 7px 5px 5px whitesmoke;
 }
 
 .login-page {
